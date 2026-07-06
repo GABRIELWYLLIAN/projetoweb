@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arte do Século XX — Movimentos e Revoluções</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ========== NAVEGAÇÃO ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">✦ Arte XX</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#intro">Início</a></li>
+                <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
+                <li><a href="#movimentos">Movimentos</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <header class="hero" id="intro">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-tag">1900 – 1999</span>
+            <h1 class="hero-title">Arte do Século XX</h1>
+            <p class="hero-sub">
+                Um século de rupturas, experimentações e novas visões de mundo.
+                Do fauvismo ao pós-modernismo, cada movimento redefiniu os
+                limites da criação.
+            </p>
+            <a href="#linha-do-tempo" class="btn btn-primary">Explorar Linha do Tempo</a>
+        </div>
+    </header>
+
+    <!-- ========== LINHA DO TEMPO ========== -->
+    <section class="section timeline" id="linha-do-tempo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Cronologia</span>
+                <h2>Linha do Tempo</h2>
+                <p>Navegue pelos principais movimentos que marcaram a arte do século XX.</p>
+            </div>
+
+            <div class="timeline-slider" id="timelineSlider">
+                <div class="timeline-track" id="timelineTrack">
+                    <!-- itens gerados via JS -->
+                </div>
+                <div class="timeline-controls">
+                    <button class="tl-btn" id="tlPrev">‹</button>
+                    <button class="tl-btn" id="tlNext">›</button>
+                </div>
+            </div>
+
+            <div class="timeline-detail" id="timelineDetail">
+                <div class="tl-detail-card">
+                    <span class="tl-detail-year" id="tlYear">1905</span>
+                    <h3 id="tlTitle">Fauvismo</h3>
+                    <p id="tlDesc">Movimento caracterizado pelo uso explosivo da cor e pinceladas soltas. Os artistas fauvistas buscavam expressar emoções através da cor pura, sem se preocupar com a representação realista.</p>
+                    <div class="tl-detail-artists" id="tlArtists">
+                        <span>Matisse</span><span>Derain</span><span>Vlaminck</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MOVIMENTOS ========== -->
+    <section class="section movements" id="movimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Movimentos</span>
+                <h2>Principais Movimentos</h2>
+                <p>Conheça as correntes artísticas que transformaram a arte moderna.</p>
+            </div>
+
+            <div class="movements-grid" id="movementsGrid">
+                <!-- gerado via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ARTISTAS ========== -->
+    <section class="section artists" id="artistas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Criadores</span>
+                <h2>Artistas em Destaque</h2>
+                <p>Nomes que definiram o século com sua visão e ousadia.</p>
+            </div>
+
+            <div class="artists-grid" id="artistsGrid">
+                <!-- gerado via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="section about" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">Sobre o projeto</span>
+                    <h2>Uma viagem visual</h2>
+                    <p>
+                        Este site foi desenvolvido como uma homenagem à efervescência
+                        cultural do século XX. Cada movimento, cada artista e cada obra
+                        carregam o espírito de um tempo que ousou questionar e reinventar.
+                    </p>
+                    <p>
+                        A curadoria digital aqui apresentada busca conectar passado e
+                        presente, inspirando novos olhares sobre a história da arte.
+                    </p>
+                    <div class="about-stats">
+                        <div><span>10</span> Movimentos</div>
+                        <div><span>12</span> Artistas</div>
+                        <div><span>1900</span> – <span>1999</span></div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-quote">
+                        <blockquote>
+                            “A arte não é o que você vê, mas o que você faz os outros verem.”
+                        </blockquote>
+                        <cite>— Edgar Degas</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>✦ Arte do Século XX — Projeto educacional</p>
+            <p class="footer-small">HTML + CSS + JavaScript | 2026</p>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT EXTERNO ========== -->
+    <script src="script.js"></script>
+</body>
+</html>
